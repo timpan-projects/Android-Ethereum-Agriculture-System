@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AgriLogistics</string>
+    <string name="app_server_url">http://35.187.159.253:8888</string>
+    <string name="ip_sync_url">http://35.187.159.253:8888</string>
+    <string name="iot_platform_url">http://nthu-smart-farming.kits.tw:3000/api/</string>
+    <string name="iot_platform_login">account/login/</string>
+    <string name="iot_platform_getFields">area/</string>
+    <string name="iot_platform_getHubs">sensorgroup_in_area/</string>
+    <string name="iot_platform_getSensors">sensors_in_group/</string>
+    <string name="iot_platform_getData">sensors_in_timeinterval/</string>
+    <string name="address_pool">0xb6a06ba130d0d15b15374ae82e51edac55e1cb63</string>
+</resources>

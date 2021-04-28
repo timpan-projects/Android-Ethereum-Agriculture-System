@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".FarmActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_time"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="記錄完成"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="作物開始種植日期:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="time"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="場域:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_time"
+            android:layout_centerHorizontal="true"
+            android:text="field name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_fieldId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_field"
+            android:layout_centerHorizontal="true"
+            android:text="field id" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sensor hub:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_hub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_fieldId"
+            android:layout_centerHorizontal="true"
+            android:text="hub name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_hubId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_hub"
+            android:layout_alignStart="@+id/textView_field"
+            android:text="text id" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="返回主頁" />
+
+</RelativeLayout>

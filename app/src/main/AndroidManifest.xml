@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tw.edu.nthu.cs.hsnl.agrilogistics">
+
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SelectRoleActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FarmWriteActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FarmFinishActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FarmChooseActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FarmStartActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FarmStartedActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FarmHarvestActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MidSettingsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MidReceiveActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MidFinishActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EndReceiveActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EndFinishActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SplitReadActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SplitWriteActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SplitSettingsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SplitFinishActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RecordReadActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RecordFinishActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RecordFinishActivity_style"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RecordSensorListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RecordSensorDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AccountActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SetWalletActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SendWeiActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".WalletListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FarmPaymentActivity"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
